@@ -13,5 +13,8 @@
     "shortlist"
   ],
   "author": "Alice H-R",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
 }
