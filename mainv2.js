@@ -1,5 +1,5 @@
 // Pick randomly between shelf, chest and Curzon
-/*
+
 const randomSource = function () {
   const randomNumber1 = Math.floor(Math.random() * 3);
   const source = [`the shelf`, `the chest`, `Curzon`];
@@ -20,4 +20,3 @@ while (arr.length < 5) {
   if (arr.indexOf(r) === -1) arr.push(r);
 }
 console.log(arr);
-*/

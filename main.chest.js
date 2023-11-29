@@ -1,9 +1,12 @@
+// How many films do you want to pick this time?
+const numberToPick = 8;
+
 // Generate array of unique numbers
 
 let arr5Numbers = [];
 let numberOfFilms = 759;
 
-while (arr5Numbers.length < 5) {
+while (arr5Numbers.length < numberToPick) {
   let r = Math.floor(Math.random() * numberOfFilms) + 1;
   if (arr5Numbers.indexOf(r) === -1) arr5Numbers.push(r);
 }
@@ -23,6 +26,7 @@ function readCSVFile() {
       .on("data", (data) => filmsArrayAll.push(data))
       .on("end", () => {
         resolve(filmsArrayAll);
+        // console.log(filmsArrayAll);
       })
       .on("error", (error) => {
         reject(error);
@@ -33,12 +37,16 @@ function readCSVFile() {
 // Usage:
 readCSVFile()
   .then((filmsArrayAll) => {
-    console.log(`Your chosen films are:`);
-    console.log(filmsArrayAll[arr5Numbers[0]]);
-    console.log(filmsArrayAll[arr5Numbers[1]]);
-    console.log(filmsArrayAll[arr5Numbers[2]]);
-    console.log(filmsArrayAll[arr5Numbers[3]]);
-    console.log(filmsArrayAll[arr5Numbers[4]]);
+    console.log(`Your chosen films from the chest are:`);
+
+    for (let i = 0; i < arr5Numbers.length; i++) {
+      const film = filmsArrayAll[arr5Numbers[i]];
+      if (film && film.Title);
+      console.log(`     ${i + 1}. ` + film.Title);
+    }
+    console.log(
+      `If you wish to replace any of these choices, amend "numberToPick" at the top of the page.`
+    );
   })
   .catch((error) => {
     console.error("Error reading CSV file:", error);
