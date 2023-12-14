@@ -12,11 +12,11 @@ randomSource();
 
 // Generate array of unique numbers
 
-let arr = [];
-let numberOfFilms = 200;
+// let arr = [];
+// let numberOfFilms = 200;
 
-while (arr.length < 5) {
-  let r = Math.floor(Math.random() * numberOfFilms) + 1;
-  if (arr.indexOf(r) === -1) arr.push(r);
-}
-console.log(arr);
+// while (arr.length < 5) {
+//   let r = Math.floor(Math.random() * numberOfFilms) + 1;
+//   if (arr.indexOf(r) === -1) arr.push(r);
+// }
+// // console.log(arr);

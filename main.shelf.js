@@ -4,7 +4,7 @@ const numberToPick = 1;
 // Generate array of unique numbers
 
 let arr5Numbers = [];
-let numberOfFilms = 14;
+let numberOfFilms = 21;
 
 while (arr5Numbers.length < numberToPick) {
   let r = Math.floor(Math.random() * numberOfFilms);

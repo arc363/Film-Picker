@@ -1,5 +1,5 @@
 // How many films do you want to pick this time?
-const numberToPick = 8;
+const numberToPick = 3;
 
 // Generate array of unique numbers
 
