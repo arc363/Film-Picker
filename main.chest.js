@@ -1,5 +1,5 @@
 // How many films do you want to pick this time?
-const numberToPick = 3;
+const numberToPick = 5;
 
 // Generate array of unique numbers
 
@@ -10,13 +10,11 @@ while (arr5Numbers.length < numberToPick) {
   let r = Math.floor(Math.random() * numberOfFilms) + 1;
   if (arr5Numbers.indexOf(r) === -1) arr5Numbers.push(r);
 }
-// console.log(arr5Numbers);
-
-// Help from gpt
 
 const fs = require("fs");
 const csv = require("csv-parser");
 
+// Read list of films in chest into script
 function readCSVFile() {
   return new Promise((resolve, reject) => {
     const filmsArrayAll = [];

@@ -1,3 +1,6 @@
+// Return to this - function to generate a user-input number
+// Number becomes length of shortlist generated
+
 const prompts = require(`prompts`);
 
 (async () => {
