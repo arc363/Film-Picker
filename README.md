@@ -4,10 +4,12 @@
 
 ## My first authentic coding project, created in October 2022, and put to good use multiple times since.
 
-Problem: how to randomly pick a film to watch next, without personal preference influencing the outcome?
+**Problem**: how to randomly pick a film to watch next, without personal preference influencing the outcome?
 
-Solution: use Film Picker to choose...
+**Solution**: use Film Picker to choose...
+
 ...a source at random
+
 ...a film from that source at random
 
 ### How to use Film Picker
